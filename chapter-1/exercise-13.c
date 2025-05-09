@@ -18,13 +18,9 @@ int main(void)
 		{
 			if (state)
 			{
+				lengths[i - 1]++;
 				buffer[i] = '\0';
 				i = 0;
-				
-				int b = 0;
-				while (buffer[b] != '\0')
-					b++;
-				lengths[b - 1]++;
 			}
 			state = !IN;
 		}
