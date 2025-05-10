@@ -11,7 +11,7 @@ void finalize_word(int *lengths, int *i, int *state)
 	}
 }
 
-int count_word_lengths(int *lengths, int *c)
+int count_word_lengths(int *lengths)
 {
 	int c, i, state;
 	i = state = 0;
@@ -66,7 +66,6 @@ void print_histogram(int max, int *lengths)
 
 int main(void)
 {
-	int i = 0;
 	int lengths[MAX_LENGTH] = {0};
 
 	if (count_word_lengths(lengths))
