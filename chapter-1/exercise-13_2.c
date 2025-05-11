@@ -72,4 +72,5 @@ int main(void)
 		return 1;
 
 	print_histogram(find_max(lengths), lengths);
+	return 0;
 }
